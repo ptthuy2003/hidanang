@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/signup_bg_top" />
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/intersemibold"
+        android:text="Chào mừng trở lại"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/card_view_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="40dp"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:layout_width="273dp"
+            android:layout_height="254dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/login_bg" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:boxBackgroundMode="none"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/usernameLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_input"
+                android:drawableStart="@drawable/person"
+                android:drawablePadding="15dp"
+                android:hint="Tên đăng nhập"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:boxBackgroundMode="none"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/primary"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_input"
+                android:drawableStart="@drawable/lock"
+                android:drawablePadding="15dp"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_button"
+            android:text="ĐĂNG NHẬP"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/primary"
+            android:textSize="16dp"
+            android:fontFamily="@font/inter"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/signup_bg_below" />
+
+</RelativeLayout>

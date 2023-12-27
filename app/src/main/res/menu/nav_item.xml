@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Trang chủ"
+        android:icon="@drawable/home"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/tourFragment"
+        android:title="Tour"
+        android:icon="@drawable/tour"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/blogFragment"
+        android:title="Blog"
+        android:icon="@drawable/blog"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/profileFragment"
+        android:title="Trang cá nhân"
+        android:icon="@drawable/person"
+        app:showAsAction="ifRoom"/>
+
+</menu>

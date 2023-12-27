@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary">
+        <LinearLayout android:id="@+id/frameSearch"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:background="@drawable/card_view_no_border">
+            <ImageButton android:id="@+id/searchBtn"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_margin="10dp"
+                android:background="@drawable/search" />
+            <EditText android:ellipsize="end"
+                android:id="@+id/txtSearch"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:hint="Nhập từ khóa"
+                android:textSize="17dp"
+                android:fontFamily="@font/inter"
+                android:textColorHint="#919191"
+                android:textColor="@color/black"
+                android:layout_marginEnd="15dp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="7dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardCornerRadius="50dp">
+
+                <LinearLayout
+                    android:id="@+id/lakeFilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/card_view_no_border">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardViewLake"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="500dp">
+
+                        <ImageView
+                            android:id="@+id/imageLake"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:src="@drawable/lake_primary" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:text="Hồ"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardCornerRadius="50dp">
+
+                <LinearLayout
+                    android:id="@+id/seaFilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/card_view_no_border">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardViewSea"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="500dp">
+
+                        <ImageView
+                            android:id="@+id/imageSea"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:src="@drawable/sea_primary" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:text="Biển"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardCornerRadius="50dp">
+
+                <LinearLayout
+                    android:id="@+id/mountainFilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/card_view_no_border">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardViewMountain"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="500dp">
+
+                        <ImageView
+                            android:id="@+id/imageMountain"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:src="@drawable/mountain_primary" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:text="Núi"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardCornerRadius="50dp">
+
+                <LinearLayout
+                    android:id="@+id/forestFilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/card_view_no_border">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardViewForest"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="500dp">
+
+                        <ImageView
+                            android:id="@+id/imageForest"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:src="@drawable/lake_primary" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:text="Rừng"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="15dp"
+        android:paddingBottom="20dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleViewListTour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameAndroidLarge"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:padding="10dp"
+    android:layout_width="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_gravity="top|end"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="Hi"
+                    android:textSize="30dp"
+                    android:fontFamily="@font/lexend"
+                    android:textColor="@color/primary"/>
+                <TextView android:ellipsize="end"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="danang"
+                    android:textSize="30dp"
+                    android:fontFamily="@font/lexend"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtKhmphNn"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@string/msg_kh_m_ph_n_n"
+                android:textStyle="italic"
+                style="@style/txtInterlight14" tools:text="@string/msg_kh_m_ph_n_n"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLanguage"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_27pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@string/lbl_tour_s_p_t_i"
+                style="@style/txtLexendregular20" tools:text="@string/lbl_tour_s_p_t_i"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="10dp"
+                app:cardElevation="5dp">
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/tourNext"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+                    <LinearLayout android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="80dp"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="20dp">
+                            <ImageView android:id="@+id/imageTourNext"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitXY"
+                                />
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout android:gravity="start"
+                            android:id="@+id/linearColumnbotngmthu"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_width="0dp" android:orientation="vertical">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/textTourNameNext"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="@string/msg_b_o_t_ng_m_thu"
+                                style="@style/txtLexendregular14" tools:text="@string/msg_b_o_t_ng_m_thu"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/textTimeNext"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="@dimen/_1pxv"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="7:30 22/12/2023"
+                                style="@style/txtInterregular11"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/textRemainTime"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_1pxv"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@string/lbl_c_n_12_ng_y"
+                                style="@style/txtInterregular11_1" tools:text="@string/lbl_c_n_12_ng_y"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/noTourNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter"
+                android:gravity="center"
+                android:text="Hiện chưa có tour nào!"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:visibility="gone" />
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtAimnib"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_28pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@string/msg_a_i_m_n_i_b"
+                style="@style/txtLexendregular20" tools:text="@string/msg_a_i_m_n_i_b"/>
+            <GridLayout
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_width="match_parent"
+                android:columnCount="2"
+                android:rowCount="2"
+              >
+                <include
+                    android:id="@+id/tour1"
+                    layout="@layout/tour_vertical"
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    />
+                <include
+                    android:id="@+id/tour2"
+                    layout="@layout/tour_vertical"
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    />
+                <include
+                    android:id="@+id/tour3"
+                    layout="@layout/tour_vertical"
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <include
+                    android:id="@+id/tour4"
+                    layout="@layout/tour_vertical"
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    />
+
+
+            </GridLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtBlogminht"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_21pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@string/lbl_blog_m_i_nh_t"
+                style="@style/txtLexendregular20" tools:text="@string/lbl_blog_m_i_nh_t"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowmnncsn"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" >
+                <include
+                    layout="@layout/blog_horizontal"
+                    android:id="@+id/blog1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"/>
+                <include
+                    layout="@layout/blog_horizontal"
+                    android:id="@+id/blog2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"/>
+                <include
+                    layout="@layout/blog_horizontal"
+                    android:id="@+id/blog3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

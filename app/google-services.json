@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1012448394243",
+    "project_id": "travel-danang-6f76d",
+    "storage_bucket": "travel-danang-6f76d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012448394243:android:b953b4674709f0b90a6236",
+        "android_client_info": {
+          "package_name": "com.example.traveldanang"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf4K6o64wj0YYna9Tl0jWMNaT7eQ9ALnY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

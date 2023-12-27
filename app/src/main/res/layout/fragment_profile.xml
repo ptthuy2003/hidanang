@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Trang cá nhân"
+            android:textSize="20dp"
+            android:fontFamily="@font/interbold"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"/>
+        <ImageButton
+            android:id="@+id/logoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:backgroundTint="@color/primary"
+            android:background="@drawable/logout"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:layout_marginEnd="10dp"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingVertical="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:paddingHorizontal="20dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Tên đăng nhập:"
+                    android:fontFamily="@font/inter"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/text_username"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Tên đăng nhập:"
+                    android:fontFamily="@font/inter"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:paddingHorizontal="20dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Email:"
+                    android:fontFamily="@font/inter"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/text_email"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Tên đăng nhập:"
+                    android:fontFamily="@font/inter"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="10dp"
+                app:boxStrokeColor="@color/primary"
+                app:helperText="Required*"
+                app:helperTextTextColor="@color/red"
+                android:textColorHint="@color/primary"
+                app:hintTextColor="@color/primary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordInputUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mật khẩu mới"
+                    android:paddingHorizontal="20dp"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="10dp"
+                app:boxStrokeColor="@color/primary"
+                app:helperText="Required*"
+                app:helperTextTextColor="@color/red"
+                android:textColorHint="@color/primary"
+                app:hintTextColor="@color/primary"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phoneInputUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Số điện thoại"
+                    android:textColorHint="@color/black"
+                    android:paddingHorizontal="20dp"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:id="@+id/imageViewCurrent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/uploadNewBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_button"
+                android:text="TẢI ẢNH MỚI"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="50dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/updateBtnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_button"
+                android:text="Cập nhật"
+                android:layout_marginHorizontal="50dp"
+                android:textColor="@color/white" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tour yêu thích"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:textSize="18dp"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/intersemibold"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycleViewTourLiked"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tour đã đi"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:textSize="18dp"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/intersemibold"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycleViewTourOrdered"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

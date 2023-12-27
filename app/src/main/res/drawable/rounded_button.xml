@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/primary" /> <!-- Màu nền của TextInputEditText -->
+    <corners android:radius="30dp" /> <!-- Độ bo tròn, điều chỉnh giá trị này theo mong muốn -->
+
+</shape>

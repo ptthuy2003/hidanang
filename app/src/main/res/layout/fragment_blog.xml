@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/primary">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hôm nay Blog có gì?"
+            android:fontFamily="@font/interbold"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="25dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/primary"
+            app:cardElevation="0dp">
+            <LinearLayout android:id="@+id/frameSearch"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:orientation="horizontal"
+                android:background="@drawable/card_view_no_border">
+                <ImageButton android:id="@+id/btnSearch"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/search" />
+                <EditText android:ellipsize="end"
+                    android:id="@+id/txtSearch"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:hint="Nhập từ khóa"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/inter"
+                    android:textColorHint="#919191"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="15dp"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="1"
+            android:paddingBottom="20dp">
+            <androidx.cardview.widget.CardView
+                android:layout_columnWeight="1"
+                android:layout_width="0dp"
+                app:cardCornerRadius="15dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:paddingHorizontal="25dp"
+                        android:scaleX="1.3"
+                        android:scaleY="1.3"
+                        android:src="@drawable/img_smallbusiness" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vui chơi"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/interbold"
+                        android:textSize="20dp"
+                        android:paddingBottom="10dp"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="15dp"
+                android:layout_width="0dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:paddingHorizontal="25dp"
+                        android:scaleX="1.3"
+                        android:scaleY="1.3"
+                        android:src="@drawable/img_food" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ăn uống"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/interbold"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="15dp"
+                android:layout_width="0dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:paddingHorizontal="25dp"
+                        android:scaleX="1.3"
+                        android:scaleY="1.3"
+                        android:src="@drawable/img_grouptask" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Con người"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/interbold"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="20dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleViewListBlog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+</LinearLayout>

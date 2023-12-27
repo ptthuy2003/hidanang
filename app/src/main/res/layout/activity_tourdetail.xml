@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/frameAndroidLarge"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#F2F2F2">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearColumnarrowup"
+            android:layout_gravity="top|center"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:paddingBottom="80dp">
+            <androidx.appcompat.widget.Toolbar android:gravity="start"
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearRowarrowup"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/frameStackarrowup"
+                        style="@style/groupStylewhite_A700_66cornerRadius"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.65"
+                        android:backgroundTint="#00FFFFFF">
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/backBtnTourDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:backgroundTint="#00FFFFFF"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_arrowup"
+                            tools:ignore="ContentDescription"
+                            tools:src="@drawable/img_arrowup"
+                            android:scaleY="2"/>
+                    </FrameLayout>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtChitittour"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@string/lbl_chi_ti_t_tour"
+                        style="@style/txtInterbold16" tools:text="@string/lbl_chi_ti_t_tour"/>
+                    <ToggleButton
+                        android:id="@+id/btn_like"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.15"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/btn_toggle_on"
+                        android:textOff=""
+                        android:textOn=""
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:cardCornerRadius="20dp"
+                >
+                <ImageView
+                    android:id="@+id/imageBig"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+            </androidx.cardview.widget.CardView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:id="@+id/recycleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/text_name_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Biển mỹ khê"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:fontFamily="@font/intersemibold"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/img_location" />
+                        <TextView
+                            android:id="@+id/text_location_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chỗ mô đó"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/inter"
+                            android:layout_marginStart="5dp"
+                            android:textColor="@color/gray_700"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/text_price_details"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="300.000 VND"
+                    android:textColor="@color/primary"
+                    android:gravity="center|end"
+                    android:textSize="24dp"
+                    android:fontFamily="@font/interbold"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thông tin tour"
+                android:textColor="@color/black"
+                android:fontFamily="@font/intersemibold"
+                android:layout_marginTop="20dp"
+                android:textSize="18dp"
+                android:textStyle="italic"/>
+            <WebView
+                android:id="@+id/webview_infor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lịch trình"
+                android:textColor="@color/black"
+                android:fontFamily="@font/intersemibold"
+                android:layout_marginTop="20dp"
+                android:textSize="18dp"
+                android:textStyle="italic"/>
+            <WebView
+                android:id="@+id/webview_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_button"
+        android:text="Đặt ngay"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="@color/white" />
+</FrameLayout>
+

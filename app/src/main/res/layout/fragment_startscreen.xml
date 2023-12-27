@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameAndroidLarge"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+    <ImageView android:id="@+id/imageUnsplashCGWnJc"
+        android:layout_gravity="start"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_unsplashcgwnjc"
+        tools:ignore="ContentDescription" tools:src="@drawable/img_unsplashcgwnjc"/>
+    <LinearLayout android:id="@+id/linearColumnlanguage"
+        android:layout_gravity="bottom|center"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_49pxv"
+        android:layout_marginEnd="@dimen/_29pxh"
+        android:layout_marginStart="@dimen/_29pxh"
+        android:layout_marginTop="@dimen/_49pxv"
+        android:layout_width="wrap_content" android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtLanguage"
+            style="@style/txtInterblack17"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/msg_b_n_s_n_s_ng"
+            android:textStyle="italic"
+            tools:text="@string/msg_b_n_s_n_s_ng" />
+
+        <TextView
+            android:id="@+id/txtNng"
+            style="@style/txtInterblack36"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_13pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/lbl_n_ng"
+            android:textStyle="italic"
+            tools:text="@string/lbl_n_ng" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnStart"
+            style="@style/btnSolidRounded"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_48pxv"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_65pxv"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingStart="@dimen/_22pxh"
+            android:paddingEnd="@dimen/_24pxh"
+            android:singleLine="true"
+            android:text="Bắt đầu"
+            android:textAllCaps="false" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hoặc"
+            android:gravity="center"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/inter"
+            android:layout_marginTop="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/loginBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="Đăng nhập"
+                android:backgroundTint="@color/primary"
+                android:background="@drawable/rounded_button"
+                android:textStyle="bold"
+                android:fontFamily="@font/inter"
+                android:layout_marginEnd="20dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/signupBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="Đăng ký"
+                android:backgroundTint="@color/primary"
+                android:background="@drawable/rounded_button"
+                android:textStyle="bold"
+                android:fontFamily="@font/inter"
+                android:layout_marginStart="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
